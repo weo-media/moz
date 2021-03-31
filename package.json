@@ -1,0 +1,40 @@
+{
+  "name": "moz-domain-authority",
+  "version": "1.0.0",
+  "description": "moz domain analysis to scrape Top Search Competitors",
+  "main": "moz-domain-authority.js",
+  "scripts": {
+    "oldTestDomAuth": "node moz-domain-authority.js withhead",
+    "testDomAuth": "node moz-api-domain-authority",
+    "backlinks": "node moz-api-backlinks",
+    "oldDomAuth": "node moz-domain-authority.js",
+    "domAuth": "node moz-api-domain-authority",
+    "testGetWeo": "node prem-seo-urls-from-weo.js withhead",
+    "getWeo": "node prem-seo-urls-from-weo.js withhead",
+    "oldTestBacklinks": "node ./backlink-audit/backlink-audit.js withhead",
+    "oldBacklinks": "node ./backlink-audit/backlink-audit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WEOmedia/seo-dm-tools/moz-domain-authority"
+  },
+  "keywords": [
+    "weo",
+    "weomedia",
+    "weo",
+    "media",
+    "moz",
+    "domain",
+    "authority",
+    "analysis"
+  ],
+  "author": "Doug McKay",
+  "license": "ISC",
+  "dependencies": {
+    "apify": "^0.21.8",
+    "async": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "isomorphic-fetch": "^3.0.0"
+  }
+}
